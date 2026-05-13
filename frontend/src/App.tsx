@@ -11,6 +11,7 @@ import { KeyboardShortcuts } from './components/ui/KeyboardShortcuts';
 import { DashboardPage } from './pages/DashboardPage';
 import { ShipmentDetailPage } from './pages/ShipmentDetailPage';
 import { DecisionsPage } from './pages/DecisionsPage';
+import { NotFoundPage } from './pages/NotFoundPage';
 
 function SSEWrapper({ children }: { children: React.ReactNode }) {
   useSSE();
@@ -26,6 +27,7 @@ function AnimatedRoutes() {
         <Route path="/" element={<DashboardPage />} />
         <Route path="/shipments/:id" element={<ShipmentDetailPage />} />
         <Route path="/decisions" element={<DecisionsPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </PageTransition>
   );

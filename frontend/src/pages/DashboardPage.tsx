@@ -11,6 +11,7 @@ import { RiskDistribution } from '../components/dashboard/RiskDistribution';
 import { StatsBarSkeleton, ShipmentRowSkeleton } from '../components/ui/Skeleton';
 import { usePigeonStore } from '../store/usePigeonStore';
 import { useToastStore } from '../store/useToastStore';
+import { useProgressStore } from '../store/useProgressStore';
 import { api } from '../lib/api';
 
 type ViewMode = 'table' | 'grid';
@@ -19,6 +20,8 @@ type StatusFilter = 'all' | 'in_transit' | 'delayed' | 'at_port' | 'delivered' |
 export function DashboardPage() {
   const setShipments = usePigeonStore((s) => s.setShipments);
   const addToast = useToastStore((s) => s.addToast);
+  const startProgress = useProgressStore((s) => s.startProgress);
+  const completeProgress = useProgressStore((s) => s.completeProgress);
   const [viewMode, setViewMode] = useState<ViewMode>(() => {
     if (typeof window !== 'undefined') {
       return window.innerWidth <= 1024 ? 'grid' : 'table';
@@ -122,6 +125,25 @@ export function DashboardPage() {
           >
             <RefreshCw className="w-3.5 h-3.5" />
             Refresh
+          </button>
+          <button
+            onClick={async () => {
+              startProgress('Refreshing all shipment risk scores...');
+              try {
+                await api.refreshRisk();
+                const data = await api.shipments();
+                setShipments(data);
+                addToast({ message: 'All risk scores refreshed', type: 'success' });
+              } catch {
+                addToast({ message: 'Failed to refresh risk scores', type: 'error' });
+              } finally {
+                completeProgress();
+              }
+            }}
+            className="flex items-center gap-1.5 px-3 py-2 rounded-lg border border-gray-200 bg-white text-sm text-gray-700 hover:bg-gray-50 hover:border-gray-300 transition-all shadow-sm"
+          >
+            <RefreshCw className="w-3.5 h-3.5" />
+            Refresh All
           </button>
         </div>
       </div>
