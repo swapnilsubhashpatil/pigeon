@@ -1,0 +1,10 @@
+{
+  "id": "TRK-005",
+  "title": "Real-time + Notifications",
+  "type": "feature",
+  "status": "complete",
+  "created": "2026-05-13T00:00:00Z",
+  "updated": "2026-05-13T06:55:00Z",
+  "phases": { "total": 2, "completed": 2 },
+  "tasks": { "total": 6, "completed": 6 }
+}

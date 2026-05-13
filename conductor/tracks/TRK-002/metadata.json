@@ -1,0 +1,16 @@
+{
+  "id": "TRK-002",
+  "title": "Risk Engine",
+  "type": "feature",
+  "status": "complete",
+  "created": "2026-05-13T00:00:00Z",
+  "updated": "2026-05-13T07:00:00Z",
+  "phases": {
+    "total": 8,
+    "completed": 8
+  },
+  "tasks": {
+    "total": 37,
+    "completed": 37
+  }
+}

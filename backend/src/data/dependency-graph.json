@@ -1,0 +1,134 @@
+[
+  {
+    "from_shipment": "SH-4800",
+    "to_shipment": "SH-4810",
+    "dependency_type": "consolidation",
+    "location": "Hamburg Consolidation Hub",
+    "notes": "SH-4800 components needed before SH-4810 can depart Hamburg"
+  },
+  {
+    "from_shipment": "SH-4801",
+    "to_shipment": "SH-4810",
+    "dependency_type": "consolidation",
+    "location": "Hamburg Consolidation Hub",
+    "notes": "SH-4801 must arrive at Hamburg before SH-4810 departs"
+  },
+  {
+    "from_shipment": "SH-4802",
+    "to_shipment": "SH-4811",
+    "dependency_type": "shared_po",
+    "notes": "Both shipments fulfil PO-7004 — SH-4802 is the primary leg"
+  },
+  {
+    "from_shipment": "SH-4803",
+    "to_shipment": "SH-4813",
+    "dependency_type": "sequence",
+    "location": "Rotterdam DC",
+    "notes": "SH-4813 picks up overflow cargo after SH-4803 delivers"
+  },
+  {
+    "from_shipment": "SH-4804",
+    "to_shipment": "SH-4824",
+    "dependency_type": "shared_po",
+    "notes": "SH-4824 carries components that complete PO-7007 started by SH-4804"
+  },
+  {
+    "from_shipment": "SH-4805",
+    "to_shipment": "SH-4825",
+    "dependency_type": "consolidation",
+    "location": "Rotterdam Warehouse",
+    "notes": "SH-4825 waits for SH-4805 before Rotterdam dispatch"
+  },
+  {
+    "from_shipment": "SH-4806",
+    "to_shipment": "SH-4826",
+    "dependency_type": "sequence",
+    "notes": "SH-4826 is the follow-on shipment in the same customer lane"
+  },
+  {
+    "from_shipment": "SH-4808",
+    "to_shipment": "SH-4809",
+    "dependency_type": "consolidation",
+    "location": "Hamburg Port",
+    "notes": "Both destined for Munich — co-loaded at Hamburg, SH-4808 arrives first"
+  },
+  {
+    "from_shipment": "SH-4809",
+    "to_shipment": "SH-4813",
+    "dependency_type": "shared_po",
+    "notes": "SH-4813 delivers parts that depend on SH-4809 base components"
+  },
+  {
+    "from_shipment": "SH-4814",
+    "to_shipment": "SH-4815",
+    "dependency_type": "sequence",
+    "location": "Felixstowe DC",
+    "notes": "SH-4815 uses space freed by SH-4814 at Felixstowe DC"
+  },
+  {
+    "from_shipment": "SH-4815",
+    "to_shipment": "SH-4817",
+    "dependency_type": "consolidation",
+    "location": "London Distribution Centre",
+    "notes": "SH-4817 co-delivers with SH-4815 to London DC"
+  },
+  {
+    "from_shipment": "SH-4819",
+    "to_shipment": "SH-4820",
+    "dependency_type": "sequence",
+    "location": "Los Angeles Port",
+    "notes": "SH-4820 berths after SH-4819 clears LAX berth"
+  },
+  {
+    "from_shipment": "SH-4820",
+    "to_shipment": "SH-4821",
+    "dependency_type": "shared_po",
+    "notes": "SH-4821 delivers remainder of order started by SH-4820"
+  },
+  {
+    "from_shipment": "SH-4824",
+    "to_shipment": "SH-4827",
+    "dependency_type": "consolidation",
+    "location": "Singapore Port",
+    "notes": "SH-4827 waits for SH-4824 feeder to arrive before loading"
+  },
+  {
+    "from_shipment": "SH-4828",
+    "to_shipment": "SH-4829",
+    "dependency_type": "sequence",
+    "location": "Nhava Sheva Port",
+    "notes": "SH-4829 shares vessel with SH-4828 — delayed if SH-4828 misses slot"
+  },
+  {
+    "from_shipment": "SH-4829",
+    "to_shipment": "SH-4831",
+    "dependency_type": "shared_po",
+    "notes": "SH-4831 delivers accessories dependent on SH-4829 base units"
+  },
+  {
+    "from_shipment": "SH-4832",
+    "to_shipment": "SH-4833",
+    "dependency_type": "consolidation",
+    "location": "New York Port",
+    "notes": "SH-4833 co-loaded with SH-4832 — misses window if SH-4832 delayed"
+  },
+  {
+    "from_shipment": "SH-4833",
+    "to_shipment": "SH-4835",
+    "dependency_type": "sequence",
+    "notes": "SH-4835 fulfils residual order after SH-4833 partial delivery"
+  },
+  {
+    "from_shipment": "SH-4836",
+    "to_shipment": "SH-4837",
+    "dependency_type": "consolidation",
+    "location": "Hamburg Port",
+    "notes": "SH-4837 joins SH-4836 at Hamburg for onward rail delivery"
+  },
+  {
+    "from_shipment": "SH-4837",
+    "to_shipment": "SH-4839",
+    "dependency_type": "shared_po",
+    "notes": "SH-4839 completes order partially filled by SH-4837"
+  }
+]

@@ -1,0 +1,802 @@
+[
+  {
+    "shipment_id": "SH-4800",
+    "status": "in_transit",
+    "origin": { "port": "CNSHA", "country": "CN" },
+    "destination": { "port": "NLRTM", "country": "NL" },
+    "carrier": "Maersk",
+    "SLA_deadline": "2026-05-18T18:00:00Z",
+    "customer_id": "CUST-001",
+    "purchase_orders": ["PO-7001", "PO-7002"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 12, "origin": "Shanghai Factory", "destination": "CNSHA" },
+      { "leg_id": "L2", "type": "port", "risk_score": 78, "origin": "CNSHA", "destination": "CNSHA" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 85, "origin": "CNSHA", "destination": "NLRTM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 35, "origin": "NLRTM", "destination": "NLRTM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 18, "origin": "NLRTM", "destination": "Amsterdam WH" }
+    ],
+    "composite_risk_score": 76,
+    "sla_urgency_multiplier": 1.4,
+    "weighted_risk_score": 87
+  },
+  {
+    "shipment_id": "SH-4801",
+    "status": "in_transit",
+    "origin": { "port": "CNSHA", "country": "CN" },
+    "destination": { "port": "NLRTM", "country": "NL" },
+    "carrier": "Maersk",
+    "SLA_deadline": "2026-05-15T12:00:00Z",
+    "customer_id": "CUST-002",
+    "purchase_orders": ["PO-7003"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 14, "origin": "Ningbo Factory", "destination": "CNSHA" },
+      { "leg_id": "L2", "type": "port", "risk_score": 82, "origin": "CNSHA", "destination": "CNSHA" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 88, "origin": "CNSHA", "destination": "NLRTM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 28, "origin": "NLRTM", "destination": "NLRTM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 10, "origin": "NLRTM", "destination": "Rotterdam DC" }
+    ],
+    "composite_risk_score": 80,
+    "sla_urgency_multiplier": 1.4,
+    "weighted_risk_score": 92
+  },
+  {
+    "shipment_id": "SH-4802",
+    "status": "in_transit",
+    "origin": { "port": "CNSHA", "country": "CN" },
+    "destination": { "port": "NLRTM", "country": "NL" },
+    "carrier": "Evergreen",
+    "SLA_deadline": "2026-05-20T06:00:00Z",
+    "customer_id": "CUST-003",
+    "purchase_orders": ["PO-7004", "PO-7005"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 8, "origin": "Suzhou Factory", "destination": "CNSHA" },
+      { "leg_id": "L2", "type": "port", "risk_score": 72, "origin": "CNSHA", "destination": "CNSHA" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 79, "origin": "CNSHA", "destination": "NLRTM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 22, "origin": "NLRTM", "destination": "NLRTM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 9, "origin": "NLRTM", "destination": "Eindhoven WH" }
+    ],
+    "composite_risk_score": 71,
+    "sla_urgency_multiplier": 1.0,
+    "weighted_risk_score": 71
+  },
+  {
+    "shipment_id": "SH-4803",
+    "status": "in_transit",
+    "origin": { "port": "CNSHA", "country": "CN" },
+    "destination": { "port": "NLRTM", "country": "NL" },
+    "carrier": "Evergreen",
+    "SLA_deadline": "2026-05-14T18:00:00Z",
+    "customer_id": "CUST-001",
+    "purchase_orders": ["PO-7006"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 20, "origin": "Hangzhou Factory", "destination": "CNSHA" },
+      { "leg_id": "L2", "type": "port", "risk_score": 90, "origin": "CNSHA", "destination": "CNSHA" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 91, "origin": "CNSHA", "destination": "NLRTM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 40, "origin": "NLRTM", "destination": "NLRTM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 22, "origin": "NLRTM", "destination": "Brussels WH" }
+    ],
+    "composite_risk_score": 85,
+    "sla_urgency_multiplier": 1.8,
+    "weighted_risk_score": 98
+  },
+  {
+    "shipment_id": "SH-4804",
+    "status": "in_transit",
+    "origin": { "port": "CNSHA", "country": "CN" },
+    "destination": { "port": "NLRTM", "country": "NL" },
+    "carrier": "Maersk",
+    "SLA_deadline": "2026-05-18T00:00:00Z",
+    "customer_id": "CUST-004",
+    "purchase_orders": ["PO-7007"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 15, "origin": "Qingdao Factory", "destination": "CNSHA" },
+      { "leg_id": "L2", "type": "port", "risk_score": 65, "origin": "CNSHA", "destination": "CNSHA" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 68, "origin": "CNSHA", "destination": "NLRTM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 30, "origin": "NLRTM", "destination": "NLRTM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 12, "origin": "NLRTM", "destination": "Hamburg WH" }
+    ],
+    "composite_risk_score": 55,
+    "sla_urgency_multiplier": 1.4,
+    "weighted_risk_score": 63
+  },
+  {
+    "shipment_id": "SH-4805",
+    "status": "in_transit",
+    "origin": { "port": "CNSHA", "country": "CN" },
+    "destination": { "port": "NLRTM", "country": "NL" },
+    "carrier": "Maersk",
+    "SLA_deadline": "2026-05-20T18:00:00Z",
+    "customer_id": "CUST-005",
+    "purchase_orders": ["PO-7008", "PO-7009"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 10, "origin": "Shenzhen Factory", "destination": "CNSHA" },
+      { "leg_id": "L2", "type": "port", "risk_score": 35, "origin": "CNSHA", "destination": "CNSHA" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 38, "origin": "CNSHA", "destination": "NLRTM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 15, "origin": "NLRTM", "destination": "NLRTM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 8, "origin": "NLRTM", "destination": "Frankfurt DC" }
+    ],
+    "composite_risk_score": 28,
+    "sla_urgency_multiplier": 1.0,
+    "weighted_risk_score": 28
+  },
+  {
+    "shipment_id": "SH-4806",
+    "status": "in_transit",
+    "origin": { "port": "CNSHA", "country": "CN" },
+    "destination": { "port": "NLRTM", "country": "NL" },
+    "carrier": "Evergreen",
+    "SLA_deadline": "2026-05-19T00:00:00Z",
+    "customer_id": "CUST-006",
+    "purchase_orders": ["PO-7010"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 7, "origin": "Tianjin Factory", "destination": "CNSHA" },
+      { "leg_id": "L2", "type": "port", "risk_score": 50, "origin": "CNSHA", "destination": "CNSHA" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 52, "origin": "CNSHA", "destination": "NLRTM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 18, "origin": "NLRTM", "destination": "NLRTM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 6, "origin": "NLRTM", "destination": "Antwerp WH" }
+    ],
+    "composite_risk_score": 42,
+    "sla_urgency_multiplier": 1.4,
+    "weighted_risk_score": 49
+  },
+  {
+    "shipment_id": "SH-4807",
+    "status": "in_transit",
+    "origin": { "port": "CNSHA", "country": "CN" },
+    "destination": { "port": "NLRTM", "country": "NL" },
+    "carrier": "Maersk",
+    "SLA_deadline": "2026-05-20T12:00:00Z",
+    "customer_id": "CUST-007",
+    "purchase_orders": ["PO-7011"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 5, "origin": "Guangzhou Factory", "destination": "CNSHA" },
+      { "leg_id": "L2", "type": "port", "risk_score": 20, "origin": "CNSHA", "destination": "CNSHA" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 22, "origin": "CNSHA", "destination": "NLRTM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 12, "origin": "NLRTM", "destination": "NLRTM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 5, "origin": "NLRTM", "destination": "Duisburg WH" }
+    ],
+    "composite_risk_score": 16,
+    "sla_urgency_multiplier": 1.0,
+    "weighted_risk_score": 16
+  },
+  {
+    "shipment_id": "SH-4808",
+    "status": "in_transit",
+    "origin": { "port": "CNSHA", "country": "CN" },
+    "destination": { "port": "DEHAM", "country": "DE" },
+    "carrier": "Hapag-Lloyd",
+    "SLA_deadline": "2026-05-15T00:00:00Z",
+    "customer_id": "CUST-008",
+    "purchase_orders": ["PO-7012", "PO-7013"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 18, "origin": "Wuhan Factory", "destination": "CNSHA" },
+      { "leg_id": "L2", "type": "port", "risk_score": 83, "origin": "CNSHA", "destination": "CNSHA" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 86, "origin": "CNSHA", "destination": "DEHAM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 45, "origin": "DEHAM", "destination": "DEHAM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 14, "origin": "DEHAM", "destination": "Munich WH" }
+    ],
+    "composite_risk_score": 78,
+    "sla_urgency_multiplier": 1.8,
+    "weighted_risk_score": 95
+  },
+  {
+    "shipment_id": "SH-4809",
+    "status": "in_transit",
+    "origin": { "port": "CNSHA", "country": "CN" },
+    "destination": { "port": "DEHAM", "country": "DE" },
+    "carrier": "MSC",
+    "SLA_deadline": "2026-05-18T12:00:00Z",
+    "customer_id": "CUST-009",
+    "purchase_orders": ["PO-7014"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 16, "origin": "Chongqing Factory", "destination": "CNSHA" },
+      { "leg_id": "L2", "type": "port", "risk_score": 75, "origin": "CNSHA", "destination": "CNSHA" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 80, "origin": "CNSHA", "destination": "DEHAM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 38, "origin": "DEHAM", "destination": "DEHAM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 11, "origin": "DEHAM", "destination": "Berlin DC" }
+    ],
+    "composite_risk_score": 71,
+    "sla_urgency_multiplier": 1.4,
+    "weighted_risk_score": 82
+  },
+  {
+    "shipment_id": "SH-4810",
+    "status": "in_transit",
+    "origin": { "port": "CNSHA", "country": "CN" },
+    "destination": { "port": "DEHAM", "country": "DE" },
+    "carrier": "Hapag-Lloyd",
+    "SLA_deadline": "2026-05-19T18:00:00Z",
+    "customer_id": "CUST-010",
+    "purchase_orders": ["PO-7015", "PO-7016"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 11, "origin": "Xi'an Factory", "destination": "CNSHA" },
+      { "leg_id": "L2", "type": "port", "risk_score": 55, "origin": "CNSHA", "destination": "CNSHA" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 58, "origin": "CNSHA", "destination": "DEHAM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 25, "origin": "DEHAM", "destination": "DEHAM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 9, "origin": "DEHAM", "destination": "Frankfurt WH" }
+    ],
+    "composite_risk_score": 48,
+    "sla_urgency_multiplier": 1.4,
+    "weighted_risk_score": 55
+  },
+  {
+    "shipment_id": "SH-4811",
+    "status": "in_transit",
+    "origin": { "port": "CNSHA", "country": "CN" },
+    "destination": { "port": "DEHAM", "country": "DE" },
+    "carrier": "MSC",
+    "SLA_deadline": "2026-05-20T00:00:00Z",
+    "customer_id": "CUST-011",
+    "purchase_orders": ["PO-7017"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 6, "origin": "Dongguan Factory", "destination": "CNSHA" },
+      { "leg_id": "L2", "type": "port", "risk_score": 30, "origin": "CNSHA", "destination": "CNSHA" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 32, "origin": "CNSHA", "destination": "DEHAM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 14, "origin": "DEHAM", "destination": "DEHAM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 6, "origin": "DEHAM", "destination": "Dortmund WH" }
+    ],
+    "composite_risk_score": 24,
+    "sla_urgency_multiplier": 1.0,
+    "weighted_risk_score": 24
+  },
+  {
+    "shipment_id": "SH-4812",
+    "status": "in_transit",
+    "origin": { "port": "CNSHA", "country": "CN" },
+    "destination": { "port": "DEHAM", "country": "DE" },
+    "carrier": "Hapag-Lloyd",
+    "SLA_deadline": "2026-05-20T18:00:00Z",
+    "customer_id": "CUST-012",
+    "purchase_orders": ["PO-7018"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 5, "origin": "Foshan Factory", "destination": "CNSHA" },
+      { "leg_id": "L2", "type": "port", "risk_score": 18, "origin": "CNSHA", "destination": "CNSHA" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 20, "origin": "CNSHA", "destination": "DEHAM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 10, "origin": "DEHAM", "destination": "DEHAM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 5, "origin": "DEHAM", "destination": "Bremen WH" }
+    ],
+    "composite_risk_score": 14,
+    "sla_urgency_multiplier": 1.0,
+    "weighted_risk_score": 14
+  },
+  {
+    "shipment_id": "SH-4813",
+    "status": "in_transit",
+    "origin": { "port": "CNSHA", "country": "CN" },
+    "destination": { "port": "DEHAM", "country": "DE" },
+    "carrier": "MSC",
+    "SLA_deadline": "2026-05-18T00:00:00Z",
+    "customer_id": "CUST-001",
+    "purchase_orders": ["PO-7019"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 22, "origin": "Nanjing Factory", "destination": "CNSHA" },
+      { "leg_id": "L2", "type": "port", "risk_score": 68, "origin": "CNSHA", "destination": "CNSHA" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 71, "origin": "CNSHA", "destination": "DEHAM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 32, "origin": "DEHAM", "destination": "DEHAM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 13, "origin": "DEHAM", "destination": "Hannover WH" }
+    ],
+    "composite_risk_score": 60,
+    "sla_urgency_multiplier": 1.4,
+    "weighted_risk_score": 72
+  },
+  {
+    "shipment_id": "SH-4814",
+    "status": "in_transit",
+    "origin": { "port": "USLAX", "country": "US" },
+    "destination": { "port": "GBFXT", "country": "GB" },
+    "carrier": "CMA CGM",
+    "SLA_deadline": "2026-05-17T12:00:00Z",
+    "customer_id": "CUST-013",
+    "purchase_orders": ["PO-7020", "PO-7021"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 28, "origin": "LA Factory", "destination": "USLAX" },
+      { "leg_id": "L2", "type": "port", "risk_score": 42, "origin": "USLAX", "destination": "USLAX" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 35, "origin": "USLAX", "destination": "GBFXT" },
+      { "leg_id": "L4", "type": "port", "risk_score": 20, "origin": "GBFXT", "destination": "GBFXT" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 15, "origin": "GBFXT", "destination": "London DC" }
+    ],
+    "composite_risk_score": 35,
+    "sla_urgency_multiplier": 1.8,
+    "weighted_risk_score": 51
+  },
+  {
+    "shipment_id": "SH-4815",
+    "status": "in_transit",
+    "origin": { "port": "USLAX", "country": "US" },
+    "destination": { "port": "GBFXT", "country": "GB" },
+    "carrier": "CMA CGM",
+    "SLA_deadline": "2026-05-19T00:00:00Z",
+    "customer_id": "CUST-014",
+    "purchase_orders": ["PO-7022"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 20, "origin": "San Diego Factory", "destination": "USLAX" },
+      { "leg_id": "L2", "type": "port", "risk_score": 38, "origin": "USLAX", "destination": "USLAX" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 30, "origin": "USLAX", "destination": "GBFXT" },
+      { "leg_id": "L4", "type": "port", "risk_score": 18, "origin": "GBFXT", "destination": "GBFXT" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 12, "origin": "GBFXT", "destination": "Manchester WH" }
+    ],
+    "composite_risk_score": 28,
+    "sla_urgency_multiplier": 1.4,
+    "weighted_risk_score": 32
+  },
+  {
+    "shipment_id": "SH-4816",
+    "status": "in_transit",
+    "origin": { "port": "USLAX", "country": "US" },
+    "destination": { "port": "GBFXT", "country": "GB" },
+    "carrier": "CMA CGM",
+    "SLA_deadline": "2026-05-20T06:00:00Z",
+    "customer_id": "CUST-015",
+    "purchase_orders": ["PO-7023"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 15, "origin": "Phoenix Factory", "destination": "USLAX" },
+      { "leg_id": "L2", "type": "port", "risk_score": 25, "origin": "USLAX", "destination": "USLAX" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 22, "origin": "USLAX", "destination": "GBFXT" },
+      { "leg_id": "L4", "type": "port", "risk_score": 15, "origin": "GBFXT", "destination": "GBFXT" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 10, "origin": "GBFXT", "destination": "Birmingham WH" }
+    ],
+    "composite_risk_score": 20,
+    "sla_urgency_multiplier": 1.0,
+    "weighted_risk_score": 20
+  },
+  {
+    "shipment_id": "SH-4817",
+    "status": "in_transit",
+    "origin": { "port": "USLAX", "country": "US" },
+    "destination": { "port": "GBFXT", "country": "GB" },
+    "carrier": "CMA CGM",
+    "SLA_deadline": "2026-05-18T18:00:00Z",
+    "customer_id": "CUST-013",
+    "purchase_orders": ["PO-7024"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 32, "origin": "Las Vegas Factory", "destination": "USLAX" },
+      { "leg_id": "L2", "type": "port", "risk_score": 48, "origin": "USLAX", "destination": "USLAX" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 42, "origin": "USLAX", "destination": "GBFXT" },
+      { "leg_id": "L4", "type": "port", "risk_score": 22, "origin": "GBFXT", "destination": "GBFXT" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 18, "origin": "GBFXT", "destination": "Bristol DC" }
+    ],
+    "composite_risk_score": 40,
+    "sla_urgency_multiplier": 1.4,
+    "weighted_risk_score": 46
+  },
+  {
+    "shipment_id": "SH-4818",
+    "status": "in_transit",
+    "origin": { "port": "USLAX", "country": "US" },
+    "destination": { "port": "GBFXT", "country": "GB" },
+    "carrier": "CMA CGM",
+    "SLA_deadline": "2026-05-20T18:00:00Z",
+    "customer_id": "CUST-014",
+    "purchase_orders": ["PO-7025"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 10, "origin": "Seattle Factory", "destination": "USLAX" },
+      { "leg_id": "L2", "type": "port", "risk_score": 18, "origin": "USLAX", "destination": "USLAX" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 16, "origin": "USLAX", "destination": "GBFXT" },
+      { "leg_id": "L4", "type": "port", "risk_score": 10, "origin": "GBFXT", "destination": "GBFXT" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 8, "origin": "GBFXT", "destination": "Glasgow WH" }
+    ],
+    "composite_risk_score": 13,
+    "sla_urgency_multiplier": 1.0,
+    "weighted_risk_score": 13
+  },
+  {
+    "shipment_id": "SH-4819",
+    "status": "in_transit",
+    "origin": { "port": "JPYOK", "country": "JP" },
+    "destination": { "port": "USLAX", "country": "US" },
+    "carrier": "ONE",
+    "SLA_deadline": "2026-05-17T18:00:00Z",
+    "customer_id": "CUST-002",
+    "purchase_orders": ["PO-7026", "PO-7027"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 8, "origin": "Tokyo Factory", "destination": "JPYOK" },
+      { "leg_id": "L2", "type": "port", "risk_score": 28, "origin": "JPYOK", "destination": "JPYOK" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 30, "origin": "JPYOK", "destination": "USLAX" },
+      { "leg_id": "L4", "type": "port", "risk_score": 45, "origin": "USLAX", "destination": "USLAX" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 35, "origin": "USLAX", "destination": "Denver WH" }
+    ],
+    "composite_risk_score": 36,
+    "sla_urgency_multiplier": 1.8,
+    "weighted_risk_score": 52
+  },
+  {
+    "shipment_id": "SH-4820",
+    "status": "in_transit",
+    "origin": { "port": "JPYOK", "country": "JP" },
+    "destination": { "port": "USLAX", "country": "US" },
+    "carrier": "ONE",
+    "SLA_deadline": "2026-05-19T06:00:00Z",
+    "customer_id": "CUST-003",
+    "purchase_orders": ["PO-7028"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 6, "origin": "Osaka Factory", "destination": "JPYOK" },
+      { "leg_id": "L2", "type": "port", "risk_score": 20, "origin": "JPYOK", "destination": "JPYOK" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 22, "origin": "JPYOK", "destination": "USLAX" },
+      { "leg_id": "L4", "type": "port", "risk_score": 38, "origin": "USLAX", "destination": "USLAX" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 28, "origin": "USLAX", "destination": "Phoenix DC" }
+    ],
+    "composite_risk_score": 26,
+    "sla_urgency_multiplier": 1.4,
+    "weighted_risk_score": 30
+  },
+  {
+    "shipment_id": "SH-4821",
+    "status": "in_transit",
+    "origin": { "port": "JPYOK", "country": "JP" },
+    "destination": { "port": "USLAX", "country": "US" },
+    "carrier": "ONE",
+    "SLA_deadline": "2026-05-20T12:00:00Z",
+    "customer_id": "CUST-004",
+    "purchase_orders": ["PO-7029"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 5, "origin": "Nagoya Factory", "destination": "JPYOK" },
+      { "leg_id": "L2", "type": "port", "risk_score": 15, "origin": "JPYOK", "destination": "JPYOK" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 16, "origin": "JPYOK", "destination": "USLAX" },
+      { "leg_id": "L4", "type": "port", "risk_score": 30, "origin": "USLAX", "destination": "USLAX" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 22, "origin": "USLAX", "destination": "Portland WH" }
+    ],
+    "composite_risk_score": 18,
+    "sla_urgency_multiplier": 1.0,
+    "weighted_risk_score": 18
+  },
+  {
+    "shipment_id": "SH-4822",
+    "status": "in_transit",
+    "origin": { "port": "JPYOK", "country": "JP" },
+    "destination": { "port": "USLAX", "country": "US" },
+    "carrier": "ONE",
+    "SLA_deadline": "2026-05-18T06:00:00Z",
+    "customer_id": "CUST-005",
+    "purchase_orders": ["PO-7030"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 9, "origin": "Kobe Factory", "destination": "JPYOK" },
+      { "leg_id": "L2", "type": "port", "risk_score": 24, "origin": "JPYOK", "destination": "JPYOK" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 26, "origin": "JPYOK", "destination": "USLAX" },
+      { "leg_id": "L4", "type": "port", "risk_score": 42, "origin": "USLAX", "destination": "USLAX" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 30, "origin": "USLAX", "destination": "Dallas WH" }
+    ],
+    "composite_risk_score": 30,
+    "sla_urgency_multiplier": 1.4,
+    "weighted_risk_score": 34
+  },
+  {
+    "shipment_id": "SH-4823",
+    "status": "in_transit",
+    "origin": { "port": "JPYOK", "country": "JP" },
+    "destination": { "port": "USLAX", "country": "US" },
+    "carrier": "ONE",
+    "SLA_deadline": "2026-05-20T00:00:00Z",
+    "customer_id": "CUST-006",
+    "purchase_orders": ["PO-7031"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 5, "origin": "Hiroshima Factory", "destination": "JPYOK" },
+      { "leg_id": "L2", "type": "port", "risk_score": 12, "origin": "JPYOK", "destination": "JPYOK" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 14, "origin": "JPYOK", "destination": "USLAX" },
+      { "leg_id": "L4", "type": "port", "risk_score": 28, "origin": "USLAX", "destination": "USLAX" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 18, "origin": "USLAX", "destination": "Houston WH" }
+    ],
+    "composite_risk_score": 16,
+    "sla_urgency_multiplier": 1.0,
+    "weighted_risk_score": 16
+  },
+  {
+    "shipment_id": "SH-4824",
+    "status": "in_transit",
+    "origin": { "port": "SGSIN", "country": "SG" },
+    "destination": { "port": "NLRTM", "country": "NL" },
+    "carrier": "MSC",
+    "SLA_deadline": "2026-05-17T00:00:00Z",
+    "customer_id": "CUST-007",
+    "purchase_orders": ["PO-7032", "PO-7033"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 10, "origin": "Singapore Factory", "destination": "SGSIN" },
+      { "leg_id": "L2", "type": "port", "risk_score": 45, "origin": "SGSIN", "destination": "SGSIN" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 48, "origin": "SGSIN", "destination": "NLRTM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 20, "origin": "NLRTM", "destination": "NLRTM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 8, "origin": "NLRTM", "destination": "Amsterdam DC" }
+    ],
+    "composite_risk_score": 38,
+    "sla_urgency_multiplier": 1.8,
+    "weighted_risk_score": 55
+  },
+  {
+    "shipment_id": "SH-4825",
+    "status": "in_transit",
+    "origin": { "port": "SGSIN", "country": "SG" },
+    "destination": { "port": "NLRTM", "country": "NL" },
+    "carrier": "MSC",
+    "SLA_deadline": "2026-05-19T12:00:00Z",
+    "customer_id": "CUST-008",
+    "purchase_orders": ["PO-7034"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 7, "origin": "Jurong Factory", "destination": "SGSIN" },
+      { "leg_id": "L2", "type": "port", "risk_score": 35, "origin": "SGSIN", "destination": "SGSIN" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 37, "origin": "SGSIN", "destination": "NLRTM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 16, "origin": "NLRTM", "destination": "NLRTM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 6, "origin": "NLRTM", "destination": "Utrecht WH" }
+    ],
+    "composite_risk_score": 28,
+    "sla_urgency_multiplier": 1.4,
+    "weighted_risk_score": 32
+  },
+  {
+    "shipment_id": "SH-4826",
+    "status": "in_transit",
+    "origin": { "port": "SGSIN", "country": "SG" },
+    "destination": { "port": "NLRTM", "country": "NL" },
+    "carrier": "MSC",
+    "SLA_deadline": "2026-05-20T18:00:00Z",
+    "customer_id": "CUST-009",
+    "purchase_orders": ["PO-7035"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 5, "origin": "Changi Factory", "destination": "SGSIN" },
+      { "leg_id": "L2", "type": "port", "risk_score": 20, "origin": "SGSIN", "destination": "SGSIN" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 22, "origin": "SGSIN", "destination": "NLRTM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 12, "origin": "NLRTM", "destination": "NLRTM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 5, "origin": "NLRTM", "destination": "Leiden WH" }
+    ],
+    "composite_risk_score": 16,
+    "sla_urgency_multiplier": 1.0,
+    "weighted_risk_score": 16
+  },
+  {
+    "shipment_id": "SH-4827",
+    "status": "in_transit",
+    "origin": { "port": "SGSIN", "country": "SG" },
+    "destination": { "port": "NLRTM", "country": "NL" },
+    "carrier": "MSC",
+    "SLA_deadline": "2026-05-18T06:00:00Z",
+    "customer_id": "CUST-010",
+    "purchase_orders": ["PO-7036"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 12, "origin": "Tuas Factory", "destination": "SGSIN" },
+      { "leg_id": "L2", "type": "port", "risk_score": 55, "origin": "SGSIN", "destination": "SGSIN" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 58, "origin": "SGSIN", "destination": "NLRTM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 24, "origin": "NLRTM", "destination": "NLRTM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 10, "origin": "NLRTM", "destination": "Hague WH" }
+    ],
+    "composite_risk_score": 45,
+    "sla_urgency_multiplier": 1.4,
+    "weighted_risk_score": 52
+  },
+  {
+    "shipment_id": "SH-4828",
+    "status": "in_transit",
+    "origin": { "port": "INNSA", "country": "IN" },
+    "destination": { "port": "NLRTM", "country": "NL" },
+    "carrier": "Hapag-Lloyd",
+    "SLA_deadline": "2026-05-17T12:00:00Z",
+    "customer_id": "CUST-011",
+    "purchase_orders": ["PO-7037", "PO-7038"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 25, "origin": "Mumbai Factory", "destination": "INNSA" },
+      { "leg_id": "L2", "type": "port", "risk_score": 60, "origin": "INNSA", "destination": "INNSA" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 55, "origin": "INNSA", "destination": "NLRTM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 22, "origin": "NLRTM", "destination": "NLRTM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 10, "origin": "NLRTM", "destination": "Tilburg WH" }
+    ],
+    "composite_risk_score": 50,
+    "sla_urgency_multiplier": 1.8,
+    "weighted_risk_score": 73
+  },
+  {
+    "shipment_id": "SH-4829",
+    "status": "in_transit",
+    "origin": { "port": "INNSA", "country": "IN" },
+    "destination": { "port": "NLRTM", "country": "NL" },
+    "carrier": "Hapag-Lloyd",
+    "SLA_deadline": "2026-05-19T18:00:00Z",
+    "customer_id": "CUST-012",
+    "purchase_orders": ["PO-7039"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 18, "origin": "Pune Factory", "destination": "INNSA" },
+      { "leg_id": "L2", "type": "port", "risk_score": 45, "origin": "INNSA", "destination": "INNSA" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 42, "origin": "INNSA", "destination": "NLRTM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 18, "origin": "NLRTM", "destination": "NLRTM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 8, "origin": "NLRTM", "destination": "Almere WH" }
+    ],
+    "composite_risk_score": 38,
+    "sla_urgency_multiplier": 1.4,
+    "weighted_risk_score": 43
+  },
+  {
+    "shipment_id": "SH-4830",
+    "status": "in_transit",
+    "origin": { "port": "INNSA", "country": "IN" },
+    "destination": { "port": "NLRTM", "country": "NL" },
+    "carrier": "Hapag-Lloyd",
+    "SLA_deadline": "2026-05-20T06:00:00Z",
+    "customer_id": "CUST-013",
+    "purchase_orders": ["PO-7040"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 12, "origin": "Chennai Factory", "destination": "INNSA" },
+      { "leg_id": "L2", "type": "port", "risk_score": 30, "origin": "INNSA", "destination": "INNSA" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 28, "origin": "INNSA", "destination": "NLRTM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 14, "origin": "NLRTM", "destination": "NLRTM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 6, "origin": "NLRTM", "destination": "Delft WH" }
+    ],
+    "composite_risk_score": 22,
+    "sla_urgency_multiplier": 1.0,
+    "weighted_risk_score": 22
+  },
+  {
+    "shipment_id": "SH-4831",
+    "status": "in_transit",
+    "origin": { "port": "INNSA", "country": "IN" },
+    "destination": { "port": "NLRTM", "country": "NL" },
+    "carrier": "Hapag-Lloyd",
+    "SLA_deadline": "2026-05-18T00:00:00Z",
+    "customer_id": "CUST-014",
+    "purchase_orders": ["PO-7041"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 20, "origin": "Bangalore Factory", "destination": "INNSA" },
+      { "leg_id": "L2", "type": "port", "risk_score": 52, "origin": "INNSA", "destination": "INNSA" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 50, "origin": "INNSA", "destination": "NLRTM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 20, "origin": "NLRTM", "destination": "NLRTM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 8, "origin": "NLRTM", "destination": "Groningen WH" }
+    ],
+    "composite_risk_score": 42,
+    "sla_urgency_multiplier": 1.4,
+    "weighted_risk_score": 48
+  },
+  {
+    "shipment_id": "SH-4832",
+    "status": "in_transit",
+    "origin": { "port": "KRPUS", "country": "KR" },
+    "destination": { "port": "USNYC", "country": "US" },
+    "carrier": "Evergreen",
+    "SLA_deadline": "2026-05-17T18:00:00Z",
+    "customer_id": "CUST-015",
+    "purchase_orders": ["PO-7042", "PO-7043"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 8, "origin": "Seoul Factory", "destination": "KRPUS" },
+      { "leg_id": "L2", "type": "port", "risk_score": 32, "origin": "KRPUS", "destination": "KRPUS" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 28, "origin": "KRPUS", "destination": "USNYC" },
+      { "leg_id": "L4", "type": "port", "risk_score": 55, "origin": "USNYC", "destination": "USNYC" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 40, "origin": "USNYC", "destination": "New Jersey WH" }
+    ],
+    "composite_risk_score": 40,
+    "sla_urgency_multiplier": 1.8,
+    "weighted_risk_score": 58
+  },
+  {
+    "shipment_id": "SH-4833",
+    "status": "in_transit",
+    "origin": { "port": "KRPUS", "country": "KR" },
+    "destination": { "port": "USNYC", "country": "US" },
+    "carrier": "Evergreen",
+    "SLA_deadline": "2026-05-19T06:00:00Z",
+    "customer_id": "CUST-001",
+    "purchase_orders": ["PO-7044"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 6, "origin": "Incheon Factory", "destination": "KRPUS" },
+      { "leg_id": "L2", "type": "port", "risk_score": 25, "origin": "KRPUS", "destination": "KRPUS" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 22, "origin": "KRPUS", "destination": "USNYC" },
+      { "leg_id": "L4", "type": "port", "risk_score": 48, "origin": "USNYC", "destination": "USNYC" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 35, "origin": "USNYC", "destination": "Newark WH" }
+    ],
+    "composite_risk_score": 32,
+    "sla_urgency_multiplier": 1.4,
+    "weighted_risk_score": 37
+  },
+  {
+    "shipment_id": "SH-4834",
+    "status": "in_transit",
+    "origin": { "port": "KRPUS", "country": "KR" },
+    "destination": { "port": "USNYC", "country": "US" },
+    "carrier": "Evergreen",
+    "SLA_deadline": "2026-05-20T12:00:00Z",
+    "customer_id": "CUST-002",
+    "purchase_orders": ["PO-7045"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 5, "origin": "Busan Factory", "destination": "KRPUS" },
+      { "leg_id": "L2", "type": "port", "risk_score": 18, "origin": "KRPUS", "destination": "KRPUS" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 16, "origin": "KRPUS", "destination": "USNYC" },
+      { "leg_id": "L4", "type": "port", "risk_score": 38, "origin": "USNYC", "destination": "USNYC" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 28, "origin": "USNYC", "destination": "Brooklyn WH" }
+    ],
+    "composite_risk_score": 22,
+    "sla_urgency_multiplier": 1.0,
+    "weighted_risk_score": 22
+  },
+  {
+    "shipment_id": "SH-4835",
+    "status": "in_transit",
+    "origin": { "port": "KRPUS", "country": "KR" },
+    "destination": { "port": "USNYC", "country": "US" },
+    "carrier": "Evergreen",
+    "SLA_deadline": "2026-05-18T12:00:00Z",
+    "customer_id": "CUST-003",
+    "purchase_orders": ["PO-7046"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 9, "origin": "Gwangyang Factory", "destination": "KRPUS" },
+      { "leg_id": "L2", "type": "port", "risk_score": 28, "origin": "KRPUS", "destination": "KRPUS" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 25, "origin": "KRPUS", "destination": "USNYC" },
+      { "leg_id": "L4", "type": "port", "risk_score": 52, "origin": "USNYC", "destination": "USNYC" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 38, "origin": "USNYC", "destination": "Queens WH" }
+    ],
+    "composite_risk_score": 36,
+    "sla_urgency_multiplier": 1.4,
+    "weighted_risk_score": 41
+  },
+  {
+    "shipment_id": "SH-4836",
+    "status": "in_transit",
+    "origin": { "port": "AUMEL", "country": "AU" },
+    "destination": { "port": "DEHAM", "country": "DE" },
+    "carrier": "Maersk",
+    "SLA_deadline": "2026-05-17T06:00:00Z",
+    "customer_id": "CUST-004",
+    "purchase_orders": ["PO-7047", "PO-7048"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 12, "origin": "Melbourne Factory", "destination": "AUMEL" },
+      { "leg_id": "L2", "type": "port", "risk_score": 28, "origin": "AUMEL", "destination": "AUMEL" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 25, "origin": "AUMEL", "destination": "DEHAM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 35, "origin": "DEHAM", "destination": "DEHAM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 10, "origin": "DEHAM", "destination": "Kiel WH" }
+    ],
+    "composite_risk_score": 26,
+    "sla_urgency_multiplier": 1.8,
+    "weighted_risk_score": 38
+  },
+  {
+    "shipment_id": "SH-4837",
+    "status": "in_transit",
+    "origin": { "port": "AUMEL", "country": "AU" },
+    "destination": { "port": "DEHAM", "country": "DE" },
+    "carrier": "Maersk",
+    "SLA_deadline": "2026-05-19T00:00:00Z",
+    "customer_id": "CUST-005",
+    "purchase_orders": ["PO-7049"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 8, "origin": "Sydney Factory", "destination": "AUMEL" },
+      { "leg_id": "L2", "type": "port", "risk_score": 20, "origin": "AUMEL", "destination": "AUMEL" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 18, "origin": "AUMEL", "destination": "DEHAM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 28, "origin": "DEHAM", "destination": "DEHAM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 8, "origin": "DEHAM", "destination": "Lübeck WH" }
+    ],
+    "composite_risk_score": 18,
+    "sla_urgency_multiplier": 1.4,
+    "weighted_risk_score": 21
+  },
+  {
+    "shipment_id": "SH-4838",
+    "status": "in_transit",
+    "origin": { "port": "AUMEL", "country": "AU" },
+    "destination": { "port": "DEHAM", "country": "DE" },
+    "carrier": "Maersk",
+    "SLA_deadline": "2026-05-20T18:00:00Z",
+    "customer_id": "CUST-006",
+    "purchase_orders": ["PO-7050"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 5, "origin": "Brisbane Factory", "destination": "AUMEL" },
+      { "leg_id": "L2", "type": "port", "risk_score": 15, "origin": "AUMEL", "destination": "AUMEL" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 14, "origin": "AUMEL", "destination": "DEHAM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 20, "origin": "DEHAM", "destination": "DEHAM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 6, "origin": "DEHAM", "destination": "Rostock WH" }
+    ],
+    "composite_risk_score": 12,
+    "sla_urgency_multiplier": 1.0,
+    "weighted_risk_score": 12
+  },
+  {
+    "shipment_id": "SH-4839",
+    "status": "in_transit",
+    "origin": { "port": "AUMEL", "country": "AU" },
+    "destination": { "port": "DEHAM", "country": "DE" },
+    "carrier": "Maersk",
+    "SLA_deadline": "2026-05-18T12:00:00Z",
+    "customer_id": "CUST-007",
+    "purchase_orders": ["PO-7051"],
+    "legs": [
+      { "leg_id": "L1", "type": "trucking", "risk_score": 15, "origin": "Perth Factory", "destination": "AUMEL" },
+      { "leg_id": "L2", "type": "port", "risk_score": 35, "origin": "AUMEL", "destination": "AUMEL" },
+      { "leg_id": "L3", "type": "ocean", "risk_score": 30, "origin": "AUMEL", "destination": "DEHAM" },
+      { "leg_id": "L4", "type": "port", "risk_score": 32, "origin": "DEHAM", "destination": "DEHAM" },
+      { "leg_id": "L5", "type": "trucking", "risk_score": 12, "origin": "DEHAM", "destination": "Cologne WH" }
+    ],
+    "composite_risk_score": 28,
+    "sla_urgency_multiplier": 1.4,
+    "weighted_risk_score": 32
+  }
+]

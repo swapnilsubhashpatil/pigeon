@@ -1,0 +1,17 @@
+[
+  { "customer_id": "CUST-001", "name": "GlobalTech Industries", "tier": "gold", "sla_penalty_per_day_usd": 28000 },
+  { "customer_id": "CUST-002", "name": "Nexus Retail Group", "tier": "gold", "sla_penalty_per_day_usd": 22000 },
+  { "customer_id": "CUST-003", "name": "Apex Manufacturing", "tier": "gold", "sla_penalty_per_day_usd": 18000 },
+  { "customer_id": "CUST-004", "name": "Horizon Electronics", "tier": "silver", "sla_penalty_per_day_usd": 12000 },
+  { "customer_id": "CUST-005", "name": "Pacific Imports Ltd", "tier": "silver", "sla_penalty_per_day_usd": 9500 },
+  { "customer_id": "CUST-006", "name": "EuroMed Pharma", "tier": "gold", "sla_penalty_per_day_usd": 35000 },
+  { "customer_id": "CUST-007", "name": "Atlas Consumer Goods", "tier": "silver", "sla_penalty_per_day_usd": 8000 },
+  { "customer_id": "CUST-008", "name": "Vantage Auto Parts", "tier": "gold", "sla_penalty_per_day_usd": 25000 },
+  { "customer_id": "CUST-009", "name": "Meridian Fashion Group", "tier": "bronze", "sla_penalty_per_day_usd": 5000 },
+  { "customer_id": "CUST-010", "name": "Apex Chemical Corp", "tier": "silver", "sla_penalty_per_day_usd": 11000 },
+  { "customer_id": "CUST-011", "name": "Sterling Textiles", "tier": "bronze", "sla_penalty_per_day_usd": 4000 },
+  { "customer_id": "CUST-012", "name": "Quantum Defense Systems", "tier": "gold", "sla_penalty_per_day_usd": 50000 },
+  { "customer_id": "CUST-013", "name": "Nordic Furniture Co", "tier": "silver", "sla_penalty_per_day_usd": 7500 },
+  { "customer_id": "CUST-014", "name": "Optima Aerospace", "tier": "gold", "sla_penalty_per_day_usd": 42000 },
+  { "customer_id": "CUST-015", "name": "SunRise Food Group", "tier": "bronze", "sla_penalty_per_day_usd": 3500 }
+]
