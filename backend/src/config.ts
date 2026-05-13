@@ -19,7 +19,6 @@ export const config = {
   geminiApiKey: requireEnv('GEMINI_API_KEY'),
   tomorrowIoApiKey: requireEnv('TOMORROW_IO_API_KEY'),
   aisStreamApiKey: requireEnv('AIS_STREAM_API_KEY'),
-  vesselFinderApiKey: requireEnv('VESSEL_FINDER_API_KEY'),
   googleMapsApiKey: requireEnv('GOOGLE_MAPS_API_KEY'),
   newsApiKey: requireEnv('NEWS_API_KEY'),
   slackWebhookUrl: env('SLACK_WEBHOOK_URL'),
