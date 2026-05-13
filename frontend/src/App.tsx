@@ -7,6 +7,7 @@ import { MobileNav } from './components/layout/MobileNav';
 import { CommandPalette } from './components/ui/CommandPalette';
 import { ErrorBoundary } from './components/ui/ErrorBoundary';
 import { PageTransition } from './components/ui/PageTransition';
+import { KeyboardShortcuts } from './components/ui/KeyboardShortcuts';
 import { DashboardPage } from './pages/DashboardPage';
 import { ShipmentDetailPage } from './pages/ShipmentDetailPage';
 import { DecisionsPage } from './pages/DecisionsPage';
@@ -39,6 +40,7 @@ function App() {
             <AnimatedRoutes />
           </ErrorBoundary>
           <CommandPalette />
+          <KeyboardShortcuts />
         </Layout>
         <MobileNav />
       </SSEWrapper>
