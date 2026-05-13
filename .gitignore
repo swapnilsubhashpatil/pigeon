@@ -3,3 +3,7 @@ node_modules
 backend/node_modules
 backend/dist
 backend/.env
+.claude/
+backend/ml/training_data.csv
+backend/ml/__pycache__/
+*.pyc

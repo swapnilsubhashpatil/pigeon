@@ -3,10 +3,10 @@
 | Status | Track ID | Title | Created | Updated |
 |--------|----------|-------|---------|---------|
 | complete | TRK-001 | Backend Foundation | 2026-05-13 | 2026-05-13 |
-| todo | TRK-002 | Risk Engine | 2026-05-13 | 2026-05-13 |
-| todo | TRK-003 | Cascade Simulator | 2026-05-13 | 2026-05-13 |
-| todo | TRK-004 | Decision Engine | 2026-05-13 | 2026-05-13 |
-| todo | TRK-005 | Real-time + Notifications | 2026-05-13 | 2026-05-13 |
+| complete | TRK-002 | Risk Engine | 2026-05-13 | 2026-05-13 |
+| complete | TRK-003 | Cascade Simulator | 2026-05-13 | 2026-05-13 |
+| complete | TRK-004 | Decision Engine | 2026-05-13 | 2026-05-13 |
+| complete | TRK-005 | Real-time + Notifications | 2026-05-13 | 2026-05-13 |
 
 ## Track Descriptions
 

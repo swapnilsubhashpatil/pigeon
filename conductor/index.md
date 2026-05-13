@@ -14,7 +14,8 @@ Navigation hub for project context.
 
 | ID | Title | Status |
 |----|-------|--------|
-| [TRK-001](./tracks/TRK-001/index.md) | Backend Foundation | pending |
+| [TRK-001](./tracks/TRK-001/index.md) | Backend Foundation | complete |
+| [TRK-002](./tracks/TRK-002/index.md) | Risk Engine | pending |
 
 ## Getting Started
 
