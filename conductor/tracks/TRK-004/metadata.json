@@ -1,0 +1,10 @@
+{
+  "id": "TRK-004",
+  "title": "Decision Engine",
+  "type": "feature",
+  "status": "complete",
+  "created": "2026-05-13T00:00:00Z",
+  "updated": "2026-05-13T06:40:00Z",
+  "phases": { "total": 3, "completed": 3 },
+  "tasks": { "total": 9, "completed": 9 }
+}
