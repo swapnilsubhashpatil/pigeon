@@ -1,4 +1,4 @@
-# Pigeon 🐦
+# Pigeon 
 
 **Autonomous AI-powered supply chain co-pilot that detects disruptions 24–72 hours early, simulates cascade failures, and executes reroute decisions — before a single delivery is missed.**
 
