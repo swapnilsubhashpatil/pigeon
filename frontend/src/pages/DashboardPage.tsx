@@ -1,7 +1,7 @@
 /** @format */
 
 import { useState, useEffect, useMemo } from 'react';
-import { Search, Filter, X } from 'lucide-react';
+import { Search, Filter, X, RefreshCw } from 'lucide-react';
 import { StatsBar } from '../components/dashboard/StatsBar';
 import { ShipmentLeaderboard } from '../components/dashboard/ShipmentLeaderboard';
 import { EventFeed } from '../components/dashboard/EventFeed';
@@ -90,6 +90,25 @@ export function DashboardPage() {
           <h1 className="text-2xl font-bold text-gray-900">Overview</h1>
           <p className="text-sm text-gray-500 mt-1">Real-time supply chain monitoring and risk assessment</p>
         </div>
+        <Button
+          variant="secondary"
+          size="sm"
+          onClick={() => {
+            setLoading(true);
+            api.shipments()
+              .then((data) => {
+                setShipments(data);
+                addToast({ message: 'Shipments refreshed', type: 'success' });
+              })
+              .catch((err) => {
+                addToast({ message: err.message || 'Failed to refresh', type: 'error' });
+              })
+              .finally(() => setLoading(false));
+          }}
+        >
+          <RefreshCw className="w-3.5 h-3.5" />
+          Refresh
+        </Button>
       </div>
 
       <StatsBar />

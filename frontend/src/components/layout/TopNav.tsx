@@ -1,14 +1,16 @@
 /** @format */
 
 import { Link, useLocation } from 'react-router-dom';
-import { Activity, Boxes, GitPullRequest, Shield, Radio } from 'lucide-react';
+import { Activity, Boxes, GitPullRequest, Shield, Radio, WifiOff } from 'lucide-react';
 import { usePigeonStore } from '../../store/usePigeonStore';
+import { useNetworkStatus } from '../../hooks/useNetworkStatus';
 
 export function TopNav() {
   const location = useLocation();
   const connected = usePigeonStore((s) => s.connected);
   const shipments = usePigeonStore((s) => s.shipments);
   const pendingDecisions = usePigeonStore((s) => s.pendingDecisions);
+  const isOnline = useNetworkStatus();
 
   const criticalCount = Array.from(shipments.values()).filter(
     (s) => s.weighted_risk_score >= 70
@@ -69,10 +71,19 @@ export function TopNav() {
         </div>
 
         <div className="flex items-center gap-2 pl-6 border-l border-gray-200">
-          <Radio className={`w-4 h-4 ${connected ? 'text-emerald-500' : 'text-red-400'}`} />
-          <span className={`text-xs font-medium ${connected ? 'text-emerald-600' : 'text-red-500'}`}>
-            {connected ? 'Live' : 'Disconnected'}
-          </span>
+          {!isOnline ? (
+            <>
+              <WifiOff className="w-4 h-4 text-red-500" />
+              <span className="text-xs font-medium text-red-600">Offline</span>
+            </>
+          ) : (
+            <>
+              <Radio className={`w-4 h-4 ${connected ? 'text-emerald-500' : 'text-amber-500'}`} />
+              <span className={`text-xs font-medium ${connected ? 'text-emerald-600' : 'text-amber-600'}`}>
+                {connected ? 'Live' : 'Connecting...'}
+              </span>
+            </>
+          )}
         </div>
       </div>
     </header>
