@@ -63,12 +63,18 @@ class Store {
     const composite = Math.round(
       updatedLegs.reduce((sum, l) => sum + l.risk_score, 0) / updatedLegs.length
     );
-    const weighted = Math.min(100, Math.round(composite * shipment.sla_urgency_multiplier));
+    const hoursRemaining = (new Date(shipment.SLA_deadline).getTime() - Date.now()) / (1000 * 60 * 60);
+    const urgencyMultiplier =
+      hoursRemaining > 72 ? 1.0 :
+      hoursRemaining > 48 ? 1.4 :
+      hoursRemaining > 24 ? 1.8 : 2.5;
+    const weighted = Math.min(100, Math.round(composite * urgencyMultiplier));
 
     const updated: Shipment = {
       ...shipment,
       legs: updatedLegs,
       composite_risk_score: composite,
+      sla_urgency_multiplier: urgencyMultiplier,
       weighted_risk_score: weighted,
     };
 
@@ -111,7 +117,10 @@ class Store {
 
   addDecision(record: DecisionRecord): void {
     this.decisions.set(record.decision_id, record);
-    if (record.status === 'pending_approval') {
+    if (record.status === 'auto_executed') {
+      this.auditLog.push(record);
+      this.broadcast({ type: 'decision_auto_executed', record });
+    } else if (record.status === 'pending_approval') {
       this.broadcast({ type: 'decision_pending', record });
     }
   }
@@ -123,6 +132,20 @@ class Store {
       ...record,
       status: 'approved',
       selected_option_id: optionId,
+      resolved_at: new Date().toISOString(),
+      resolved_by: 'manager',
+    };
+    this.decisions.set(id, updated);
+    this.auditLog.push(updated);
+    return updated;
+  }
+
+  rejectDecision(id: string): DecisionRecord | undefined {
+    const record = this.decisions.get(id);
+    if (!record || record.status !== 'pending_approval') return undefined;
+    const updated: DecisionRecord = {
+      ...record,
+      status: 'overridden',
       resolved_at: new Date().toISOString(),
       resolved_by: 'manager',
     };
